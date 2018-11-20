@@ -1,0 +1,582 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #151515 ;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+   font-family:"Helvetica", "Lucida Grande", "Microsoft JhengHei", sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* --------------------------------
+ * parts
+ * -------------------------------- */
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button-showy {
+  background-color: #D29E04;
+}
+.button-ghost {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  padding: 170px 30px 80px;
+}
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
+}
+.site-description {
+  margin-top: 50px;
+  color: #888;
+  font-size: 1.6rem;
+}
+.buttons .button {
+  margin: 10px;
+}
+
+
+
+.face{
+
+  background: url('../images/S47652872.jpg') ;
+  width: 140px;
+  height: 150px;
+  background-size: 100% 100%;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+}
+
+.faceid{
+
+  margin-top: 30px;
+}
+
+
+.social-box{
+
+  margin-top: 50px;
+}
+
+
+.social-box a{
+
+  display: inline-block;
+
+  width:50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0 10px;
+  transition: all 0.8s;
+
+}
+
+.social-box a:hover {
+      background-color: white;
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg); }
+
+.social-icon{
+
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+
+
+.fb:hover  {
+  color: #0066cc; 
+}
+
+.ig:hover {
+  color: #ff3399; 
+}
+
+.githubcc:hover{
+  color: #600080; 
+}
+
+
+.mouse-icon{
+    position: absolute;
+    left: 50.5%;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    height: 40px;
+    width: 24px;
+    margin-left: -15px;
+    display: block;
+    z-index: 10;
+    opacity: 0.7;
+
+
+}
+
+
+.mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    width: 2px;
+    height: 6px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+.mouse-icon .wheel {
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -webkit-animation-name: drop;
+          animation-name: drop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: 25px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 5px;
+    opacity: 0;
+  }
+}
+@keyframes drop {
+  0% {
+    top: 25px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 5px;
+    opacity: 0;
+  }
+}
+
+
+/* --------------------------------
+ * about
+ * -------------------------------- */
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+
+/* --------------------------------
+ * works
+ * -------------------------------- */
+.works {
+  padding: 80px 0;
+  background-color: #151515;
+}
+.works-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+.work-box {
+  position: relative;
+  display: table-cell;
+}
+.work-image {
+  display: block;
+  width: 100%;
+  margin: 0 0 60%;
+}
+.work-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  overflow-y: auto;
+}
+.work-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.work-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.work-text .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+}
+.work-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.2;
+  transform: scaleY(-1);
+}
+.work-box.tree::after {
+  background-image: url('../images/tree.jpg');
+}
+.work-box.building::after {
+  background-image: url('../images/building.jpg');
+}
+.work-box.lake::after {
+  background-image: url('../images/lake.jpg');
+}
+.work-box.sky::after {
+  background-image: url('../images/sky.jpg');
+}
+.work-box:nth-child(odd) .work-image {
+  margin: 60% 0 0;
+}
+.work-box:nth-child(odd) .work-description,
+.work-box:nth-child(odd)::after {
+  top: 0;
+}
+
+
+/* --------------------------------
+ * skills
+ * -------------------------------- */
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+.skill-box {
+  display: table-cell;
+}
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  font-size: 8rem;
+  line-height: 142px;
+}
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+.skill-text {
+  margin: 0 20px;
+  line-height: 2;
+}
+
+
+/* --------------------------------
+ * contact
+ * -------------------------------- */
+.contact {
+  padding: 80px 0 150px;
+  font-size: 20px;
+}
+
+.contact-content{
+
+  font-size: 16px;
+  margin: 60px;
+}
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+.contact-form input[type=text],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+}
+
+.country{
+
+  margin-bottom: 30px;
+}
+.country .taiww{
+  width: 18px;
+  height: 12px;
+  margin-right: 8px;
+  vertical-align: middle;
+
+}
+
+/* --------------------------------
+ * smart phone
+ * -------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    background-image: none;
+  }
+}
+@media (max-width: 768px) {
+  /* 智慧型手機及垂直縱向的平板電腦所使用的樣式 */
+  body {
+    font-size: 1.3rem;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+
+  /* --- header --- */
+  .header {
+    padding-top: 60px;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+
+  /* --- about --- */
+  .about-text {
+    line-height: 1.8;
+  }
+
+  /* --- works --- */
+  .works-wrapper,
+  .work-box {
+    display: block;
+  }
+  .work-image {
+    display: none;
+  }
+  .work-description {
+    position: relative;
+  }
+  .work-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+  }
+
+  /* --- skills --- */
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+  .skill-box {
+    margin: 40px auto;
+  }
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .skill-text {
+    margin: 0;
+  }
+
+  /* --- contact --- */
+
+
+
+
+  .contact {
+    padding-bottom: 80px;
+  }
+  .contact-form {
+    width: 80%;
+  }
+}
+
+
+/* --------------------------------
+ * challenge (挑戰自我)
+ *
+ * 請將以下這段程式碼解除註解狀態後，套用
+ * 到 .heading::before 和 .heading::after
+ * 的 Style 
+ * -------------------------------- */
+
+.heading::before,
+.heading::after {
+  content: '';
+  display: inline-block;
+  width: 0.3em;
+  height: 0.3em;
+  margin: 0 0.5em;
+  border: 1px solid;
+  vertical-align: 0.2em;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.work-box {
+  overflow: hidden;
+}
+.work-image {
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+.work-box:nth-child(odd) .work-image {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+}
+.work-box:nth-child(even) .work-image {
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+.work-box:hover .work-image {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
