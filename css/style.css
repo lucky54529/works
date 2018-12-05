@@ -141,7 +141,6 @@ body {
 }
 
 .social-box a:hover {
-      background-color: white;
       -webkit-transform: rotate(360deg);
       -moz-transform: rotate(360deg);
       -o-transform: rotate(360deg);
@@ -157,16 +156,20 @@ body {
 
 
 
-.fb:hover  {
-  color: #0066cc; 
+.fb:hover{
+
+  background-color: #0066cc;
 }
 
 .ig:hover {
-  color: #ff3399; 
+    background: radial-gradient(
+      circle at 30% 107%,
+     #fdf497 0%, #fdf497 5%,
+     #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-.githubcc:hover{
-  color: #600080; 
+.github:hover {
+    background-color: #600080;
 }
 
 
