@@ -170,11 +170,24 @@ body {
 }
 
 
-.mouse-description{
+.animation-wrapper{
+
+  display: table;
+  margin: 0 auto;
+  width: 20%;
+  table-layout: fixed;
+}
+
+.animation-box{
+
+  display: table-cell;
+}
+
+.animation-description{
 
   margin-top: 60px;
   color: #888;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -187,7 +200,8 @@ body {
   border-radius: 16px;
   opacity: 0.7;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 30px;
+
 }
 
 
@@ -209,7 +223,7 @@ body {
   height: 5px;
   left: 12px;
   top: 3px;
-  
+
 }
 
 .mouse-icon .wheel{
@@ -222,6 +236,57 @@ body {
   animation-play-state: running;
 }
 
+
+.finger-icon{
+
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+  opacity: 0.7;
+  margin-top: 20px;
+  transform: rotate(315deg);
+}
+
+
+
+
+
+.finger-icon{
+
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes slide{
+
+  0%{
+
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+  }
+
+  50%{
+
+    bottom: 10px;
+    left: 10px;
+    opacity: 1;
+  }
+
+  100%{
+
+
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+  }
+}
+
+
 @keyframes drop{
 
   0%{
@@ -230,7 +295,7 @@ body {
     opacity: 0;
   }
 
-  30%{
+  50%{
 
     top: 5px;
     opacity: 1;
@@ -244,7 +309,6 @@ body {
 
 
 }
-
 /* --------------------------------
  * about
  * -------------------------------- */
@@ -469,7 +533,7 @@ body {
 
   /* --- header --- */
   .header {
-    padding-top: 60px;
+    padding-top: 30px;
   }
   .site-title-sub {
     font-size: 1.7rem;
@@ -484,6 +548,14 @@ body {
     margin-top: 35px;
     font-size: 5rem;
   }
+
+  .animation-wrapper{
+
+  display: table;
+  margin: 0 auto;
+  width: 60%;
+  table-layout: fixed;
+}
 
   /* --- about --- */
   .about-text {
@@ -540,11 +612,7 @@ body {
 
 
 /* --------------------------------
- * challenge (挑戰自我)
- *
- * 請將以下這段程式碼解除註解狀態後，套用
- * 到 .heading::before 和 .heading::after
- * 的 Style 
+
  * -------------------------------- */
 
 .heading::before,
