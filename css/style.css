@@ -69,7 +69,7 @@ body {
  * header
  * -------------------------------- */
 .header {
-  padding: 170px 30px 80px;
+  padding: 70px 30px 80px;
 }
 .site-title-sub {
   margin: 0 0 30px;
@@ -110,19 +110,19 @@ body {
   border-radius: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 60px;
 
 }
 
 .faceid{
 
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 
 .social-box{
 
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 
@@ -176,7 +176,7 @@ body {
 .animation-wrapper{
 
   display: table;
-  margin: 0 auto;
+  margin: 30px auto 0;
   width: 20%;
   table-layout: fixed;
 }
@@ -188,7 +188,6 @@ body {
 
 .animation-description{
 
-  margin-top: 60px;
   color: #888;
   font-size: 1.5rem;
 }
@@ -552,10 +551,8 @@ body {
 
   .animation-wrapper{
 
-  display: table;
-  margin: 0 auto;
   width: 60%;
-  table-layout: fixed;
+  margin-top: 30px;
 }
 
   /* --- about --- */
