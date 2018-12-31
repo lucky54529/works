@@ -594,6 +594,7 @@ background-color: #d03c56;
 
   /* --- header --- */
 
+
   .primary-nav {
     float: left;
 
@@ -604,10 +605,15 @@ background-color: #d03c56;
 
   }
 
+  .primary-nav a:hover{
+
+    
+  }
+
 
 
   .header {
-    padding-top: 30px;
+    padding-top: 45px;
   }
   .site-title-sub {
     font-size: 1.7rem;
