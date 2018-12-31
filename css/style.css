@@ -58,6 +58,63 @@ body {
 /* --------------------------------
  * header
  * -------------------------------- */
+ .page-header {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+
+}
+
+.page-header.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.page-header > .inner {
+    margin: auto;
+    width: 960px;
+}
+
+.no-boxshadow .page-header {
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+
+
+.primary-nav {
+    float: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.primary-nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+.primary-nav a {
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #666;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 8px;
+
+
+}
+.primary-nav a:hover {
+color: #fff;
+background-color: #d03c56;
+
+
+}
+
+
 .header {
   padding: 70px 30px 80px;
 }
@@ -331,6 +388,7 @@ body {
 /* --------------------------------
  * works
  * -------------------------------- */
+
 .works {
   padding: 80px 0;
   background-color: #151515;
@@ -535,6 +593,19 @@ body {
   }
 
   /* --- header --- */
+
+  .primary-nav {
+    float: left;
+
+}
+
+  .primary-nav a{
+    padding: 0px 10px;
+
+  }
+
+
+
   .header {
     padding-top: 30px;
   }
