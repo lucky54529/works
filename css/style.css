@@ -150,11 +150,11 @@ background-color: #d03c56;
 
 .face{
 
-  background: url('../images/S47652872.jpg') no-repeat;
-  width: 160px;
-  height: 200px;
-  background-size: 100% auto;
-  border-radius: 50%;
+  background: url('../images/1.jpg') no-repeat;
+  width: 200px;
+  height: 284px;
+  background-size: 100% 100%;
+  border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
